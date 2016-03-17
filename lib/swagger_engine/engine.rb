@@ -3,9 +3,9 @@ module SwaggerEngine
     isolate_namespace SwaggerEngine
 
     initializer "swagger_engine.assets.precompile", group: :all do |app|
-      app.config.assets.precompile += %w(print.css reset.css)
+      app.config.assets.precompile += %w(swagger_engine/print.css
+                                         swagger_engine/reset.css)
     end
-
   end
 
   class Configuration

@@ -49,15 +49,17 @@ end
 
 ### Json files
 
-Set the path of your json files in a initializer:
+Set the path of your json files in a initializer, you can specify relative paths
+if your json files are dynamically served:
 
 ```
 #config/initializers/swagger_engine.rb
 
 SwaggerEngine.configure do |config|
   config.json_files = {
-    v1: "lib/swagger/swagger_v1.json",
-    v2: "lib/swagger/swagger_v2.json"
+    default: "api/swagger.json",
+    v1:      "lib/swagger/swagger_v1.json",
+    v2:      "lib/swagger/swagger_v2.json"
   }
 end
 ```
@@ -70,9 +72,3 @@ Use [Swagger editor](https://github.com/swagger-api/swagger-editor).
 ## License
 
 This project rocks and uses MIT-LICENSE.
-
-## Developed in collaboration with
-
-[Rawfish](http://rawfishindustries.com)
-
-[![Rawfish Logo](http://rawfishindustries.com/wp-content/uploads/2015/03/logo_rawfish_WEB.jpg)](http://rawfishindustries.com)
