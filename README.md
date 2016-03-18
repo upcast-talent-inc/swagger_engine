@@ -69,6 +69,14 @@ end
 
 Use [Swagger editor](https://github.com/swagger-api/swagger-editor).
 
+## Upgrade Swagger UI
+
+- [Download](https://github.com/swagger-api/swagger-ui/releases) latest release source code.
+- Fetch styles, images, js from `source_code/dist` and update files in `swagger_engine/app/assets`.
+- Don't add style.css/style.scss file
+- Change in styles `url` to `asset-url` and change path to images:
+    `url('../images/throbber.gif')` -> `asset-url('throbber.gif')`
+
 ## License
 
 This project rocks and uses MIT-LICENSE.
