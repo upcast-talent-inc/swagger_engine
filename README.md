@@ -76,6 +76,7 @@ Use [Swagger editor](https://github.com/swagger-api/swagger-editor).
 - Don't add style.css/style.scss file
 - Change in styles `url` to `asset-url` and change path to images:
     `url('../images/throbber.gif')` -> `asset-url('throbber.gif')`
+- Check if libs updated/added in  `source_code/dist/lib` compare with `swagger_engine/app/assets/javascripts/wagger_engine/lib` and update/add this libs require in `swagger_engine/app/assets/javascripts/wagger_engine/application.js`
 
 ## License
 
