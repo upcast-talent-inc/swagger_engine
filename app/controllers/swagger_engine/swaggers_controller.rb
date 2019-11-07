@@ -4,7 +4,7 @@ module SwaggerEngine
   class SwaggersController < ApplicationController
     layout false
 
-    before_filter :load_json_files
+    before_action :load_json_files
 
     def index
       default_api = @json_files.first[0]
